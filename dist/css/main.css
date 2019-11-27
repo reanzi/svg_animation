@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  position: relative;
+  text-align: center;
+  width: 100%; }
+
+#fore_wheel,
+#back_wheel {
+  animation: wheels 2s linear infinite;
+  transform-origin: center;
+  transform-box: fill-box; }
+
+#man_bic {
+  animation: man_bic 1s ease-in-out infinite alternate;
+  transform-origin: bottom; }
+
+#hart {
+  animation: hart 1.1s ease-in-out infinite alternate;
+  transform-origin: bottom;
+  transform-box: fill-box; }
+
+@keyframes wheels {
+  from {
+    transform: rotateZ(0deg); }
+  to {
+    transform: rotateZ(360deg); } }
+
+@keyframes man_bic {
+  from {
+    transform: rotateX(0deg); }
+  to {
+    transform: rotateX(10deg); } }
+
+@keyframes hart {
+  from {
+    transform: rotateY(0deg) rotateZ(0deg); }
+  to {
+    transform: rotateY(11deg) rotateZ(3deg); } }
